@@ -11,6 +11,7 @@ extra_css:
     - custom.css
 plugins:
     - youtube
+    - search
 markdown_extensions:
     - markdown.extensions.extra
     - markdown.extensions.codehilite
