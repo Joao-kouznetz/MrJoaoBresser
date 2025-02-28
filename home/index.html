@@ -20,6 +20,7 @@
             <link rel="stylesheet" href="../assets/css/root.min.css">
             <link rel="stylesheet" href="../assets/css/main.min.css">
                 <link href="../custom.css" rel="stylesheet">
+                <script src="../search/main.js"></script>
 
             
                 
@@ -92,7 +93,16 @@
 <!--  endblock -->
             </header>
 
-            <main>
+            <main><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
 
                 
                         <!-- block content -->
@@ -177,6 +187,7 @@
             <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
             <script src="../assets/js/bootstrap.bundle.min.js""></script>
             <script src="../assets/js/main.min.js""></script>
+                <script src="../search/main.js" defer></script>
 
     </body>
 
