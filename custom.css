@@ -1,3 +1,54 @@
 .title {
 	font-size: 2rem;
+} /* Estilo para o botão de cópia */
+.copy-code-button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.8
+	); /* Mantém o fundo transparente */
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	opacity: 0.7; /* Mantém a opacidade padrão do botão */
+	z-index: 10;
+	padding: 0;
+}
+
+.copy-code-button:hover {
+	opacity: 1; /* Mantém a opacidade no hover */
+	background-color: #ffffff;
+}
+
+/* Ícones do botão */
+.copy-code-button svg {
+	fill: #555;
+}
+
+.copy-code-button .check-icon {
+	display: none;
+	fill: #4caf50;
+	opacity: 1; /* Garante que o ícone de check seja sempre opaco */
+}
+
+.copy-code-button.copied .copy-icon {
+	display: none;
+}
+
+.copy-code-button.copied .check-icon {
+	display: inline-block;
+}
+
+.copy-code-button.copied {
+	opacity: 1 !important;
 }
