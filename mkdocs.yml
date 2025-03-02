@@ -17,3 +17,7 @@ plugins:
 markdown_extensions:
     - markdown.extensions.extra
     - markdown.extensions.codehilite
+extra:
+    analytics:
+        provider: google
+        property: G-2Q9N8G49PY # Substitua pelo seu ID do Google Analytics
