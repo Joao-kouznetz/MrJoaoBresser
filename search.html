@@ -14,6 +14,14 @@
             
                 <link  rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
             
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q9N8G49PY"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2Q9N8G49PY');
+        </script>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -96,44 +104,63 @@
 
             <main><!-- block search -->
 <div class="collapse" id="collapseExample">
-    <div role="search" class="search-box">
-        <form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
-            <input type="text" name="q" class="search-query"
-            placeholder="Search docs" title="Type search term here" />
-        </form>
-    </div>
+	<div role="search" class="search-box">
+		<form
+			id="rtd-search-form"
+			class="wy-form"
+			action="./search.html"
+			method="get"
+		>
+			<input
+				type="text"
+				name="q"
+				class="search-query"
+				placeholder="Search docs"
+				title="Type search term here"
+			/>
+		</form>
+	</div>
 </div>
 <!-- endblock -->
 
-                
-
-
-	
+                  
 <!-- block search -->
 <section class="p-md-5 content-search">
 	<article class="search-box">
 		<p></p>
 		<h1 id="search">Search Results</h1>
-		<hr>
+		<hr />
 
 		<form id="content_search" action="./search.html">
-			<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-			<input name="q" id="mkdocs-search-query" type="text" class="search-query search_input search-query ui-autocomplete-input"
-				placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
+			<span
+				role="status"
+				aria-live="polite"
+				class="ui-helper-hidden-accessible"
+			></span>
+			<input
+				name="q"
+				id="mkdocs-search-query"
+				type="text"
+				class="search-query search_input search-query ui-autocomplete-input"
+				placeholder="Search the Docs"
+				autocomplete="off"
+				autofocus
+				title="Type search term here"
+			/>
 		</form>
 
-		<div id="mkdocs-search-results" class="search-results" data-no-results-text="No results found">
+		<div
+			id="mkdocs-search-results"
+			class="search-results"
+			data-no-results-text="No results found"
+		>
 			Searching...
 		</div>
-
 	</article>
 </section>
 <!-- endblock -->
 
-
-
-
-
+  
                 
                 
             </main>
