@@ -3,7 +3,9 @@ docs_dir: docsmd # onde acha o md
 nav:
     - Home: index.md
     - legal: home.md
-    - Projetos: nuvem.md
+    - Projetos:
+          - nuvem.md
+          - seila.md
 theme:
     name: simple-blog
     custom_dir: project_files/custom_theme/
@@ -13,11 +15,9 @@ extra_javascript:
     - js/copy-button.js
 plugins:
     - youtube
+    - resize_image
+    - stack_nav
     - search
 markdown_extensions:
     - markdown.extensions.extra
     - markdown.extensions.codehilite
-extra:
-    analytics:
-        provider: google
-        property: G-2Q9N8G49PY # Substitua pelo seu ID do Google Analytics

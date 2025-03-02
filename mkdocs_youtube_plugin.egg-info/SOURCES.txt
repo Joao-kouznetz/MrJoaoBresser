@@ -1,3 +1,4 @@
+README.md
 setup.py
 mkdocs_youtube_plugin.egg-info/PKG-INFO
 mkdocs_youtube_plugin.egg-info/SOURCES.txt
@@ -5,4 +6,6 @@ mkdocs_youtube_plugin.egg-info/dependency_links.txt
 mkdocs_youtube_plugin.egg-info/entry_points.txt
 mkdocs_youtube_plugin.egg-info/top_level.txt
 plugins/__init__.py
+plugins/resize_image.py
+plugins/stack_nav.py
 plugins/youtube.py

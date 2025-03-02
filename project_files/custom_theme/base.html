@@ -31,6 +31,7 @@
             {%- endif %}
 
         {%- endblock %}
+        <!-- Gootle tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q9N8G49PY"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -78,7 +79,7 @@
         {%- endblock %}
     </head>
 
-    <body>
+    <body{% if is_in_nav_menu %} data-is-in-nav="true"{% else %} data-is-in-nav="false"{% endif %}>
         <div class="container py-3">
             <header>
                 {%- block header %}

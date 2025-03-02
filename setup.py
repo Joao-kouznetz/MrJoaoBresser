@@ -8,6 +8,8 @@ setup(
     entry_points={
         "mkdocs.plugins": [
             "youtube = plugins.youtube:YouTubePlugin",
+            "resize_image = plugins.resize_image:ResizedImagePlugin",
+            "stack_nav = plugins.stack_nav:StackNavigationPlugin",
         ]
     },
 )

@@ -8,6 +8,12 @@ Essa documentação explica os comandos necessários para construir e publicar a
 
 ## 1. Construção da Documentação
 
+Para so ver como ela fica rode:
+
+```
+mkdocs serve --livereload
+```
+
 Para gerar a documentação localmente, use o comando:
 
 ```
