@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: mkdocs-youtube-plugin
+Version: 0.1.0
+Summary: Plugin para embutir vídeos do YouTube em documentação MkDocs
+Dynamic: summary
