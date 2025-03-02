@@ -12,7 +12,7 @@ pip install mkdocs
 
 teste
 
-[adicionando link](../nuvem)
+[adicionando link](./nuvem.md)
 
 - coisa
 - 2 coisa
