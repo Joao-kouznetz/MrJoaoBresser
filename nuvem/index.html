@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-bs-theme="">
     <head>
-                <title>Projetos - MR Joao Bresser</title>
+                <title>Como elaborar um servidor - MR Joao Bresser</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,7 @@
             
                 <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
             
+        <!-- Gootle tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q9N8G49PY"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -29,6 +30,7 @@
             <link rel="stylesheet" href="../assets/css/main.min.css">
                 <link href="../custom.css" rel="stylesheet">
                 <script src="../js/copy-button.js"></script>
+                <script src="../js/stack-navigation.js"></script>
                 <script src="../search/main.js"></script>
 
             
@@ -36,7 +38,7 @@
             
     </head>
 
-    <body>
+    <body data-is-in-nav="true">
         <div class="container py-3">
             <header>
                     <!-- block header -->
@@ -70,9 +72,21 @@
                             <a class="
                             nav-link text-gray text-decoration-none" href="../home/">[legal]</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class=" active 
-                            nav-link text-gray text-decoration-none" href="./">[Projetos]</a>
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Projetos]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="./" class="dropdown-item text-decoration-none  active ">Como elaborar um servidor</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../seila/" class="dropdown-item text-decoration-none ">testando para ver como fica</a>
+    </li>
+<!-- endblock -->
+                            </ul>
                         </li>
             </ul>
         </li>
@@ -129,7 +143,7 @@
     <article>
         <header>
             
-                <h1 class=" title" id="component-title">Projetos</h1>
+                <h1 class=" title" id="component-title">Como elaborar um servidor</h1>
             
         </header>
         <p><h1 id="como-elaborar-um-servidor">Como elaborar um servidor</h1>
@@ -151,7 +165,7 @@
         </div>
         <div class="col themed-grid-col"></div>
         <div class="col themed-grid-col">
-            <a rel="next" class="nav-link disabled">
+            <a rel="next" href="../seila/" class="nav-link">
                 Next <i class="fa fa-arrow-right"></i>
             </a>
         </div>
@@ -178,6 +192,7 @@
             <script src="../assets/js/bootstrap.bundle.min.js""></script>
             <script src="../assets/js/main.min.js""></script>
                 <script src="../js/copy-button.js" defer></script>
+                <script src="../js/stack-navigation.js" defer></script>
                 <script src="../search/main.js" defer></script>
 
     </body>
