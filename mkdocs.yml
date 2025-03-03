@@ -2,13 +2,11 @@ site_name: MR Joao Bresser
 docs_dir: docsmd # onde acha o md
 nav:
     - Home: index.md
-    - legal: home.md
-    - Projetos:
-          - nuvem.md
-          - seila.md
+    - Projetos: projetos.md
 theme:
     name: simple-blog
     custom_dir: project_files/custom_theme/
+    language: pt-br
 extra_css:
     - custom.css
 extra_javascript:
