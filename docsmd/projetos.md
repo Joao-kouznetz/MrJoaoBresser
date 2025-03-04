@@ -44,7 +44,7 @@ Este projeto tem como objetivo desenvolver um modelo de análise de sentimentos 
 
 [pdf de classificação sentimentos](Classificacao_sentimentos.pdf)
 
-# 3 Pokecrias
+# 3. Pokecrias
 
 Jogo foi criado no 1 semestre da faculdade
 
