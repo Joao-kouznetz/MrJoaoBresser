@@ -48,9 +48,7 @@ Este projeto tem como objetivo desenvolver um modelo de análise de sentimentos 
 
 Jogo foi criado no 1 semestre da faculdade
 
-![filme](https://www.youtube.com/watch?v=alVXklTohTU)
-
-![teste](https://www.youtube.com/watch?v=9HhyvPTbIXc)
+![Demonstração jogo](https://www.youtube.com/watch?v=9HhyvPTbIXc)
 
 ```zsh
 pip install mkdocs
