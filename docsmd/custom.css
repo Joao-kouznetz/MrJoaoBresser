@@ -52,3 +52,18 @@
 .copy-code-button.copied {
 	opacity: 1 !important;
 }
+/* Adicione este CSS no seu arquivo de estilos customizados do MkDocs */
+
+/* Manter tamanho padrão no desktop */
+.youtube-container iframe {
+	width: 560px;
+	height: 315px;
+}
+
+/* Ajustar tamanho em telas menores (dispositivos móveis) */
+@media (max-width: 600px) {
+	.youtube-container iframe {
+		width: 100%;
+		height: auto;
+	}
+}

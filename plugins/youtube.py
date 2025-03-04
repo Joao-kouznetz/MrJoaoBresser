@@ -13,10 +13,12 @@ class YouTubeEmbedProcessor(ImageInlineProcessor):
         # Extrai o id do vídeo
         video_id = m.group("id")
 
+        # Cria o elemento div para responsividade
+        wrapper = etree.Element("div")
+        wrapper.set("class", "youtube-container")
+
         # Cria o elemento iframe
-        iframe = etree.Element("iframe")
-        iframe.set("width", "560")
-        iframe.set("height", "315")
+        iframe = etree.SubElement(wrapper, "iframe")
         iframe.set("src", f"https://www.youtube.com/embed/{video_id}")
         iframe.set("title", "YouTube video player")
         iframe.set("frameborder", "0")
@@ -25,8 +27,9 @@ class YouTubeEmbedProcessor(ImageInlineProcessor):
             "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
         )
         iframe.set("allowfullscreen", "allowfullscreen")
+        iframe.set("loading", "lazy")
 
-        return iframe, m.start(0), m.end(0)
+        return wrapper, m.start(0), m.end(0)
 
 
 class YouTubeEmbedExtension(Extension):
