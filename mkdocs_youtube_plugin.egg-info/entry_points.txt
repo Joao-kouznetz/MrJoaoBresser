@@ -1,4 +1,0 @@
-[mkdocs.plugins]
-resize_image = plugins.resize_image:ResizedImagePlugin
-stack_nav = plugins.stack_nav:StackNavigationPlugin
-youtube = plugins.youtube:YouTubePlugin

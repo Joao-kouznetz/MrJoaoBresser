@@ -22,7 +22,7 @@ Esse projeto tem como objetivo elaborar uma API RESTfull capaz de cadastrar e au
 
 [Link de acesso para documentação](https://joao-kouznetz.github.io/Nuvem-Projeto1/)
 
-# 2 Classificação de sentimentos em Noticias Financeiras
+# 2. Classificação de sentimentos em Noticias Financeiras
 
 [Git hub acesso](https://github.com/Joao-kouznetz/Classificacao_sentimentos)
 
@@ -30,7 +30,7 @@ Esse projeto tem como objetivo elaborar uma API RESTfull capaz de cadastrar e au
 
 ## Descrição
 
-Este projeto tem como objetivo desenvolver um modelo de análise de sentimentos para textos financeiros, utilizando um conjunto de dados composto por aproximadamente 5.000 sentenças extraídas de notícias e comunicados empresariais. As frases foram classificadas por especialistas como positivas, negativas ou neutras, permitindo a construção de um modelo preditivo para identificar o tom das informações financeiras.
+Este projeto tem como objetivo desenvolver um modelo de análise de sentimentos para textos financeiros, utilizando um conjunto de dados composto por aproximadamente 5.000 sentenças extraídas de notícias e comunicados empresariais. As frases foram classificadas por especialistas como positivas, negativas ou neutras, permitindo a construção de um modelo preditivo para identificar o tom das informações financeiras. O jupyter notebook pode ser encontrado no github
 
 ### Tecnologias utilizadas
 
@@ -42,8 +42,20 @@ Este projeto tem como objetivo desenvolver um modelo de análise de sentimentos 
 - Matriz de confusão (análise do desempenho do modelo)
 - Curvas de aprendizado (avaliação da influência do tamanho do dataset no desempenho do modelo)
 
-### Resultados
-
-O modelo apresentou uma acurácia média de 69%, com melhor desempenho na identificação de sentenças neutras e positivas. A análise dos termos mais influentes revelou que palavras como "profit", "down", e "sales" têm forte impacto nas previsões. Além disso, identificou-se indícios de overfitting, sugerindo que um maior volume de dados poderia melhorar a performance do modelo.
-
 [pdf de classificação sentimentos](Classificacao_sentimentos.pdf)
+
+# 3 Pokecrias
+
+Jogo foi criado no 1 semestre da faculdade
+
+![filme](https://www.youtube.com/watch?v=alVXklTohTU)
+
+![videodeYoutubededemonstraçãojogo](https://youtu.be/9HhyvPTbIXc)
+
+```zsh
+pip install mkdocs
+```
+
+## Descrição
+
+O jogo Pokecrias é um jogo de luta inspirado nos jogos de pokemon de gameboy, porém, com os pré-candidatos a presidência de 2022 fazendo paródias quanto as suas pessoas, respectivamente. O mundo aberto foi criado mas não teve tempo o suficiente para adicionar conteúdo interessante.
