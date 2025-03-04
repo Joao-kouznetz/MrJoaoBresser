@@ -50,7 +50,7 @@ Jogo foi criado no 1 semestre da faculdade
 
 ![filme](https://www.youtube.com/watch?v=alVXklTohTU)
 
-![videodeYoutubededemonstraçãojogo](https://youtu.be/9HhyvPTbIXc)
+![teste](https://www.youtube.com/watch?v=9HhyvPTbIXc)
 
 ```zsh
 pip install mkdocs

@@ -32,8 +32,8 @@ class YouTubeEmbedProcessor(ImageInlineProcessor):
 class YouTubeEmbedExtension(Extension):
     def extendMarkdown(self, md):
         pattern = YouTubeEmbedProcessor(YOUTUBE_RE, md)
-        # Registra a extensão com prioridade 175 (maior que a do padrão de imagens)
-        md.inlinePatterns.register(pattern, "youtube_embed", 175)
+        # Aumenta a prioridade para 210 para que seja processado antes do resize_image
+        md.inlinePatterns.register(pattern, "youtube_embed", 210)
 
 
 class YouTubePlugin(mkdocs.plugins.BasePlugin):
