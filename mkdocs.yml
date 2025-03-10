@@ -11,6 +11,7 @@ extra_css:
     - custom.css
 extra_javascript:
     - js/copy-button.js
+    - js/image-link.js
 plugins:
     - youtube
     - resize_image

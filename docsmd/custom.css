@@ -67,3 +67,72 @@
 		height: auto;
 	}
 }
+
+/* Clickable image styling */
+a img {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	transition: all 0.3s ease;
+	box-shadow: 0 -20px 80px -20px rgba(255, 255, 255, 0.12) inset;
+	position: relative;
+}
+
+/* Container for clickable images */
+.clickable-image-container {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 12px;
+	transition: transform 0.3s ease;
+}
+
+.clickable-image-container:hover img {
+	transform: scale(1.05);
+	filter: brightness(0.9);
+}
+
+/* Read more label */
+.clickable-image-container::after {
+	content: "Leia mais \2192";
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	background-color: white;
+	color: black;
+	padding: 4px 12px;
+	border-radius: 8px;
+	font-size: 14px;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: all 0.3s ease;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Arrow icon after text */
+.clickable-image-container::after {
+	content: "Leia mais \2192"; /* Unicode right arrow */
+}
+
+.clickable-image-container:hover::after {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Shadow overlay for hover effect */
+.clickable-image-container::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.03);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.clickable-image-container:hover::before {
+	opacity: 1;
+}
