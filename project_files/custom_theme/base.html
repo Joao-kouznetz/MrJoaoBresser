@@ -1,13 +1,6 @@
 <!doctype html>
 <html data-bs-theme="{{ config.theme.theme_style }}">
     <head>
-        <!-- Google Tag Manager -->
-        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-P2JF8Z3L"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-        </script>
         {%- block site_meta %}
             {%- block htmltitle %}
                 <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
@@ -38,6 +31,16 @@
             {%- endif %}
 
         {%- endblock %}
+        <!-- Gootle tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q9N8G49PY"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2Q9N8G49PY');
+        </script>
+
         {%- block styles %}
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
